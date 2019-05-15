@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
             height: 10,
           ),
           Expanded(
-            child: contents == null ? Container() : _getCodeView(context),
+            child: contents == null ? Container() : _getASCIIView(context),
           ),
           Row(
             mainAxisSize: MainAxisSize.min,
@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Widget _getCodeView(BuildContext context) {
+  Widget _getASCIIView(BuildContext context) {
     return Stack(
       alignment: AlignmentDirectional.bottomEnd,
       children: <Widget>[
