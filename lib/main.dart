@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
   MODE currentMode = MODE.simple;
   String pathImage;
   Image2Ascii image2ascii;
-  double _textScaleFactor = 0.5;
+  double _textScaleFactor = 1;
   final key = new GlobalKey<ScaffoldState>();
 
   @override
@@ -115,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   text: TextSpan(
                     style: TextStyle(
                       fontFamily: 'monospace',
-                      fontSize: 3,
+                      fontSize: 5,
                       color: Colors.black,
                     ),
                     text: contents,
@@ -144,6 +144,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ],
-    );
+    );  
   }
 }
